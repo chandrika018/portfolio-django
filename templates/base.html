@@ -1,59 +1,47 @@
-
 <!doctype html>
 <html lang="en">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <title>Chandrika's Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg bg-body-dark navbar-dark " style="background-color: #15284f;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Chandrika's Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+    <body class="min-h-screen bg-gradient-to-br from-slate-950 via-gray-900 to-black">
+        <nav class="bg-slate-900 shadow-lg">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="flex justify-between items-center h-16">
+
+                    <!-- Logo -->
+                    <h1 class="text-white text-2xl font-bold tracking-wide">
+                        Chandrika's Portfolio
+                    </h1>
+
+                    <!-- Menu -->
+                    <ul class="flex space-x-12 text-white font-medium">
+                        <li><a href="/" class="hover:text-yellow-300 transition duration-300  ">Home</a></li>
+                        <li><a href="/about" class="hover:text-yellow-300 transition duration-300">About</a></li>
+                        <li><a href="/skills" class="hover:text-yellow-300 transition duration-300">Skills</a></li>
+                        <li><a href="/projects" class="hover:text-yellow-300 transition duration-300">Projects</a></li>
+                        <li><a href="/education" class="hover:text-yellow-300 transition duration-300">Education</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Education
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/services">Skills</a></li>
-                                <li><a class="dropdown-item" href="/services">Projects</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Experience</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact Us</a>
-                        </li>
-                        
+                        <li><a href="/contact" class="hover:text-yellow-300 transition duration-300">Contact Us</a></li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+
                 </div>
+
             </div>
         </nav>
         {% block body %}
+         <div class="min-h-screen flex items-center justify-center">
+            <div class="text-white text-center">
+                <h3>HELLO,I AM</h3>
+                <h2>Chandrika Nandehariya</h2>
+                <p>Full stack Developer | AI/ML Enthusiast</p>
+            </div>
+         </div>
         {% endblock body %}
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

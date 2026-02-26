@@ -14,9 +14,18 @@ def about(request):
     # return HttpResponse("This is My About page")
   return render(request,'about.html')
 
-def services(request):
+def skills(request):
     # return HttpResponse("This is My services page")
-  return render(request,'services.html')
+  return render(request,'skills.html')
+def projects(request):
+   return render(request,'projects.html')
+
+def education(request):
+   return render(request,'education.html')
+
+
+def contact(request):
+   return render(request,'contact.html')
 
 def contact(request):
      if request.method == "POST":
