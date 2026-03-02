@@ -1,6 +1,96 @@
 {% extends "base.html" %}
 {% block body %}
 
-  <h1>This is my first Skills page.</h1>
 
- {% endblock body %}
+<div class=" text-white px-6 py-16">
+
+    <h1 class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+               text-transparent bg-clip-text text-4xl font-bold mb-12 text-center  ">My Skills</h1>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Programming -->
+        <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-blue-500/20">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400"><i class="fas fa-code"></i> Programming</h2>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2 text-orange-400"><i class="fab fa-java"></i> Java</li>
+                <li class="flex items-center gap-2 text-yellow-400"><i class="fab fa-python"></i> Python</li>
+                <li class="flex items-center gap-2 text-yellow-300"><i class="fab fa-js"></i> JavaScript</li>
+            </ul>
+        </div>
+
+        <!-- Frontend -->
+        <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-pink-500/20">
+            <h2 class="text-2xl font-semibold mb-4 text-pink-400"><i class="fas fa-laptop-code"></i> Frontend</h2>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2 text-orange-500"><i class="fab fa-html5"></i> HTML</li>
+                <li class="flex items-center gap-2 text-blue-500"><i class="fab fa-css3-alt"></i> CSS</li>
+                <li class="flex items-center gap-2 text-cyan-400"><i class="fas fa-wind"></i> Tailwind CSS</li>
+                <li class="flex items-center gap-2 text-yellow-300"><i class="fab fa-js"></i> JavaScript</li>
+            </ul>
+        </div>
+
+        <!-- Backend -->
+        <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-green-500/20">
+            <h2 class="text-2xl font-semibold mb-4 text-green-400"><i class="fas fa-server"></i> Backend</h2>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2 text-green-500"><i class="fas fa-leaf"></i> Django</li>
+                <li class="flex items-center gap-2 text-green-400"><i class="fab fa-node"></i> Node.js</li>
+            </ul>
+        </div>
+
+        <!-- AI / ML -->
+        <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-purple-500/20">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-400"><i class="fas fa-robot"></i> AI / ML</h2>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2 text-pink-400"><i class="fas fa-brain"></i> Machine Learning</li>
+                <li class="flex items-center gap-2 text-yellow-400"><i class="fas fa-comments"></i> Chatbot Dev</li>
+                <li class="flex items-center gap-2 text-blue-400"><i class="fas fa-magic"></i> Prompt Eng.</li>
+            </ul>
+        </div>
+
+        <!-- Tools -->
+        <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-orange-500/20">
+            <h2 class="text-2xl font-semibold mb-4 text-orange-400"><i class="fas fa-tools"></i> Tools</h2>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2 text-red-400"><i class="fab fa-git-alt"></i> Git</li>
+                <li class="flex items-center gap-2 text-white"><i class="fab fa-github"></i> GitHub</li>
+                <li class="flex items-center gap-2 text-blue-400"><i class="fas fa-code"></i> VS Code</li>
+                <li class="flex items-center gap-2 text-pink-400"><i class="fas fa-paint-brush"></i> Canva</li>
+            </ul>
+        </div>
+
+        <!-- Database -->
+        <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-cyan-500/20">
+            <h2 class="text-2xl font-semibold mb-4 text-cyan-400"><i class="fas fa-database"></i> Database</h2>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2 text-blue-400"><i class="fas fa-database"></i> MySQL</li>
+                <li class="flex items-center gap-2 text-gray-400"><i class="fas fa-database"></i> SQLite</li>
+            </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-yellow-500/20">
+            <h2 class="text-2xl font-semibold mb-4 text-yellow-400"><i class="fas fa-user"></i> Soft Skills</h2>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2 text-yellow-300"><i class="fas fa-lightbulb"></i> Problem Solving</li>
+                <li class="flex items-center gap-2 text-blue-300"><i class="fas fa-users"></i> Team Work</li>
+                <li class="flex items-center gap-2 text-green-300"><i class="fas fa-comments"></i> Communication</li>
+                <li class="flex items-center gap-2 text-pink-300"><i class="fas fa-star"></i> Creativity</li>
+            </ul>
+        </div>
+
+        <!-- Currently Learning -->
+        <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-indigo-500/20">
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-400"><i class="fas fa-book-open"></i> Currently Learning</h2>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2 text-purple-300"><i class="fas fa-robot"></i> Advanced AI</li>
+                <li class="flex items-center gap-2 text-green-300"><i class="fas fa-plug"></i> API Integration</li>
+                <li class="flex items-center gap-2 text-blue-300"><i class="fas fa-server"></i> Backend Dev</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+{% endblock body %}
