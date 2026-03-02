@@ -2,6 +2,66 @@
 
 {% block body %}
 
-    <h1>This is my Education page..................</h1>
+<div class="bg-[#0b1220] text-white px-6 py-16">
+
+  <h1 class="text-4xl font-bold text-center mb-12">🎓 Education</h1>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+
+    <!-- BE -->
+    <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-blue-500/20 hover:scale-105 transition">
+      <div class="flex items-center gap-4 mb-3">
+        <i class="fas fa-university text-blue-400 text-2xl"></i>
+        <h2 class="text-xl font-semibold text-blue-400">Bachelor of Engineering</h2>
+      </div>
+      <p class="text-gray-300">Computer Engineering</p>
+      <p class="text-gray-400 text-sm">Duration: 2023 - Present</p>
+
+      <div class="mt-4 space-y-2 text-gray-300">
+        <p><span class="text-blue-300">Sem 1:</span> 7.24 CGPA</p>
+        <p><span class="text-blue-300">Sem 2:</span> 8.05 CGPA</p>
+        <p><span class="text-blue-300">Sem 3:</span> 8.74 CGPA</p>
+        <p><span class="text-blue-300">Sem 4:</span> 9.22 CGPA</p>
+        <p><span class="text-blue-300">Sem 5:</span> 8.40 CGPA</p>
+      </div>
+    </div>
+
+    <!-- 12th -->
+    <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-green-500/20 hover:scale-105 transition">
+      <div class="flex items-center gap-4 mb-3">
+        <i class="fas fa-school text-green-400 text-2xl"></i>
+        <h2 class="text-xl font-semibold text-green-400">Higher Secondary (12th)</h2>
+      </div>
+      <p class="text-gray-300">Science Stream</p>
+      <p class="text-gray-400 text-sm">Duration: 2021 - 2023</p>
+      <p class="text-green-300 mt-2 font-semibold">Percentage: 63.33%</p>
+    </div>
+
+    <!-- 10th -->
+    <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-pink-500/20 hover:scale-105 transition">
+      <div class="flex items-center gap-4 mb-3">
+        <i class="fas fa-book text-pink-400 text-2xl"></i>
+        <h2 class="text-xl font-semibold text-pink-400">Secondary School (10th)</h2>
+      </div>
+      <p class="text-gray-300">General Studies</p>
+      <p class="text-gray-400 text-sm">Duration: 2019 - 2021</p>
+      <p class="text-pink-300 mt-2 font-semibold">Percentage: 94.15%</p>
+    </div>
+
+    <!-- Certifications -->
+    <div class="bg-[#121a2f] p-6 rounded-2xl shadow-lg border border-yellow-500/20 hover:scale-105 transition">
+      <div class="flex items-center gap-4 mb-3">
+        <i class="fas fa-certificate text-yellow-400 text-2xl"></i>
+        <h2 class="text-xl font-semibold text-yellow-400">Certifications</h2>
+      </div>
+      <ul class="text-gray-300 space-y-2">
+        <li>AI Fundamentals Certification</li>
+        <li>Web Development Certification</li>
+        <li>Python Programming Certification</li>
+      </ul>
+    </div>
+
+  </div>
+
     
 {% endblock body %}
